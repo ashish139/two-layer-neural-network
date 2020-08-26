@@ -1,0 +1,1 @@
+Creating a two layer neural network to understand the basic workings of deep learning, will further use this in implementing other networks.
