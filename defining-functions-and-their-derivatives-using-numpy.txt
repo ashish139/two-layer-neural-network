@@ -1,0 +1,26 @@
+import numpy as np 
+
+//Sigmoid function - used to convert any Value to the range 0 to 1
+def Sigmoid(Z):
+    return 1/(1+np.exp(-Z))
+
+
+//Rectified Linear Unit - Convert all negative values to zero, for positive input no change
+def Relu(Z):
+    return np.maximum(0,Z)
+
+
+//Derivative of sigmoid function, will use these function derivatives in Back-propagation
+def dSigmoid(Z):
+    s = 1/(1+np.exp(-Z))
+    dZ = s * (1-s)
+    return dZ
+
+
+//Derivative of Rectified Linear Unit, very simple derivative
+def dRelu(x):
+    x[x<=0] = 0
+    x[x>0] = 1
+    return x
+
+
