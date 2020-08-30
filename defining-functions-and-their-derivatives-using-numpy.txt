@@ -1,3 +1,4 @@
+//commiting the file again
 import numpy as np 
 
 //Sigmoid function - used to convert any Value to the range 0 to 1
